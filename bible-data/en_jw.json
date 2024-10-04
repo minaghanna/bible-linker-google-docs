@@ -149,7 +149,7 @@
       "padStart": {
         "bookNum": {
           "targetLength": 1,
-          "padString": "0"
+          "padString": "1"
         },
         "chapter": {
           "targetLength": 3,
