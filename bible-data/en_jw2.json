@@ -149,8 +149,8 @@
       "urlFormat": "https://www.bible.com/bible/114/<<bookName>>.<<chapterStart>>.<<verseStart>>-<<verseEnd>>",
       "padStart": {
         "bookNum": {
-          "targetLength": 1,
-          "padString": "1"
+          "targetLength": 0,
+          "padString": "0"
         },
         "chapter": {
           "targetLength": 0,
