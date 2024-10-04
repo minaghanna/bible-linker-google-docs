@@ -1,21 +1,23 @@
 {
-  "locale": "es",
+  "locale": "en",
   "bookCount": 66,
   "bookSingleChapters": [31, 57, 63, 64, 65],
   "info": {
-    "id": "es_jw",
-    "displayName": "Español (JW.org)",
-    "url": [
-      "https://raw.githubusercontent.com/majal/bible-linker-google-docs/main/bible-data/es_jw.json",
-      "https://pastebin.com/raw/3GjkEhdB"
-    ],
+    "id": "en_jw",
+    "displayName": "English (JW.org)",
+    "url": ["https://raw.githubusercontent.com/majal/bible-linker-google-docs/main/bible-data/en_jw.json", "https://pastebin.com/raw/0W8738GK"],
     "strings": {
       "errors": {
-        "nullBibleData": "No hay datos de la Biblia disponibles",
+        "nullBibleData": {
+          "title": "Bible data is no longer available",
+          "message": "Bible Linker will run using the default Bible data instead."
+        },
         "downloadJSON": {
-          "title": "Error al obtener el origen de datos",
-          "messageBeforeSingular": "Hubo un problema al obtener el siguiente origen de datos:\n\n",
-          "messageBeforePlural": "Hubo problemas al obtener los siguientes orígenes de datos:\n\n"
+          "title": "Failed to get data source",
+          "messageBeforeSingular": "There was a problem fetching the following data source:\n\n",
+          "messageAfterSingular": "\n\nIs the link accessible? Has the JSON been linted for errors?",
+          "messageBeforePlural": "There were problems fetching the following data sources:\n\n",
+          "messageAfterPlural": "\n\nAre the link accessible? Has the JSON files been linted for errors?"
         }
       }
     }
@@ -24,219 +26,131 @@
     "menu": {
       "lengthLimit": 100,
       "title": "Bible Linker",
-      "doLink": "🔗\u00a0\u00a0Enlace los versículo usando",
-      "chooseBibleVersion": "📖\u00a0\u00a0Escoja la versión de la Biblia",
-      "chooseDataSource": "🌐\u00a0\u00a0Escoja el Idioma (orígen de Datos)",
+      "doLink": "🔗\u00a0\u00a0Link verses using",
+      "chooseBibleVersion": "📖\u00a0\u00a0Choose Bible version",
+      "chooseDataSource": "🌐\u00a0\u00a0Choose language (data source)",
+      "customLabel": "Custom:\u00a0",
       "selector": {
         "selected": "▸\u00a0\u00a0",
         "unselected": "\u00a0\u00a0\u00a0\u00a0"
       },
-      "customDataSource": "Establezca el origen de datos personalizado ..."
+      "customDataSource": "Set custom data source ..."
     },
     "bibleDataSource": {
       "update": {
-        "title": "Nuevo idioma u origen de datos",
-        "messageBefore": "Activado:\u00a0\u00a0▸\u00a0\u00a0",
+        "title": "New language or data source",
+        "messageBefore": "Activated:\u00a0\u00a0▸\u00a0\u00a0",
         "messageAfter": ""
       }
     },
     "customDataSource": {
       "input": {
-        "title": "Origen de Datos Personalizado",
-        "messageBefore": "Ejemplo de JSON:\n\n",
-        "messageAfter": "Posibles entradas:\n\n(1) JSON con key: \"/url\".\nData tipo de \"/url\" puede ser un string o un array.\n\n(2) URL de un JSON válido con datos de la Biblia.\n Aquí puede ver ejemplos de datos JSON,:\nhttps://github.com/majal/bible-linker-google-docs/tree/main/bible-data\n\nIngrese JSON or URL:\n\n"
+        "title": "Custom data source",
+        "messageBefore": "Sample JSON data:\n\n",
+        "messageAfter": "Possible inputs:\n\n(1) JSON with key: \"/url\".\nData type of \"/url\" can be string or array.\n\n(2) URL of valid JSON Bible data.\nFor examples of valid JSON data, please see here:\nhttps://github.com/majal/bible-linker-google-docs/tree/main/bible-data\n\nEnter JSON or URL:\n\n"
       },
       "success": {
-        "title": "Nuevo origen de Datos Personalizado",
-        "messageBefore": "✔ Se cargó éxitosamente:\n\n"
+        "title": "New custom data source",
+        "messageBefore": "✔ Successfully loaded:\n\n"
       },
       "error": {
-        "title": "JSON o URL inválido",
-        "message": "El JSON ingresado no tiene \"url\" key, o este URL envía a un JSON inválido JSON.\n\nPara ver ejemplos de un JSON externo por favor vea: https://github.com/majal/bible-linker-google-docs/tree/main/bible-data\n\nHAquí está la URL no válida o JSON:\n\n"
+        "title": "Invalid JSON or URL",
+        "message": "The entered JSON has no \"url\" key, or this URL points to an invalid JSON.\n\nFor an example of an external JSON, please visit: https://github.com/majal/bible-linker-google-docs/tree/main/bible-data\n\nHere is the invalid URL or JSON:\n\n"
       }
     },
     "errorMessages": {
       "parserError": {
         "title": "Oops!",
-        "messageBefore": "Tuvimos un inconveniente en esta línea:\n\n",
-        "messageAfter": "\n\n¿Hay un error tipográfico, o el Linker no detectó este?\n\nPuede informar de este error aquí:\n\nhttps://github.com/majal/bible-linker-google-docs/issues"
+        "messageBefore": "We had a snag in this line:\n\n",
+        "messageAfter": "\n\nIs there a typo, or did the Linker miss this one?\n\nYou may report this error here:\n\nhttps://github.com/majal/bible-linker-google-docs/issues"
       }
     }
   },
   "html": {
     "studyTools": {
-      "displayName": "📝\u00a0\u00a0Herramientas de Estudio",
-      "windowLabel": "Herramientas de Estudio",
-      "url": "https://raw.githubusercontent.com/majal/bible-linker-google-docs/main/bible-data/es_jw.html"
+      "displayName": "📝\u00a0\u00a0Study tools",
+      "windowLabel": "Bible study tools",
+      "url": "https://raw.githubusercontent.com/majal/bible-linker-google-docs/main/bible-data/en_jw.html"
     }
   },
-"bookNames": {
-   "1": [ "Génesis", "Gé", "Gén." ],
-   "2": [ "Éxodo", "Éx", "Éx." ], 
-   "3": [ "Levítico", "Le", "Lev." ], 
-   "4": [ "Números", "Nú", "Núm." ], 
-   "5": [ "Deuteronomio", "Dt", "Deut." ], 
-   "6": [ "Josué", "Jos", "Jos." ], 
-   "7": [ "Jueces", "Jue", "Juec." ], 
-   "8": [ "Rut" ], 
-   "9": [ "1 Samuel", "1Sa", "1 Sam." ], 
-   "10": [ "2 Samuel", "2Sa", "2 Sam." ], 
-   "11": [ "1 Reyes", "1 Rey.", "1Re" ], 
-   "12": [ "2 Reyes", "2 Rey.", "2Re" ], 
-   "13": [ "1 Crónicas", "1 Crón.", "1 Cronica", "1Cr" ], 
-   "14": [ "2 Crónicas", "2 Crón.", "2 Cronica", "2Cr" ], 
-   "15": [ "Esdras", "Esd." ], 
-   "16": [ "Nehemías", "Ne", "Neh." ], 
-   "17": [ "Ester", "Est", "Est." ], 
-   "18": [ "Job" ], 
-   "19": [ "Salmos", "Salmo", "Sal.", "Sl" ], 
-   "20": [ "Proverbios", "Prov.", "Pr" ], 
-   "21": [ "Eclesiastés", "Ec", "Ecl." ], 
-   "22": [ "El Cantar de los Cantares", "Can", "Cant." ], 
-   "23": [ "Isaías", "Is.", "Isa" ], 
-   "24": [ "Jeremías", "Jer", "Jer." ], 
-   "25": [ "Lamentaciones", "Lam", "Lam." ], 
-   "26": [ "Ezequiel", "Eze", "Ezeq." ], 
-   "27": [ "Daniel", "Da", "Dan." ], 
-   "28": [ "Oseas", "Os", "Os." ], 
-   "29": [ "Joel", "Joe" ], 
-   "30": [ "Amós", "Am" ], 
-   "31": [ "Abdías", "Abd", "Abd." ],
-   "32": [ "Jonás", "Jon", "Jon." ], 
-   "33": [ "Miqueas", "Miq", "Miq." ], 
-   "34": [ "Nahúm", "Na", "Nah." ], 
-   "35": [ "Habacuc", "Hab", "Hab." ], 
-   "36": [ "Sofonías", "Sof", "Sof." ], 
-   "37": [ "Ageo", "Ag" ], 
-   "38": [ "Zacarías", "Zac", "Zac." ], 
-   "39": [ "Malaquías", "Mal", "Mal." ], 
-   "40": [ "Mateo", "Mt", "Mat." ], 
-   "41": [ "Marcos", "Mr", "Mar." ], 
-   "42": [ "Lucas", "Lu", "Luc." ], 
-   "43": [ "Juan", "Jn" ], 
-   "44": [ "Hechos", "Hch", "Hech." ], 
-   "45": [ "Romanos", "Ro", "Rom." ], 
-   "46": [ "1 Corintios", "1Co", "1 Cor." ], 
-   "47": [ "2 Corintios", "2Co", "2 Cor." ], 
-   "48": [ "Gálatas", "Gál", "Gál." ], 
-   "49": [ "Efesios", "Ef", "Efes." ], 
-   "50": [ "Filipenses", "Flp", "Filip." ], 
-   "51": [ "Colosenses", "Col", "Col." ], 
-   "52": [ "1 Tesalonicenses", "1Te", "1 Tes." ], 
-   "53": [ "2 Tesalonicenses", "2Te", "2 Tes." ], 
-   "54": [ "1 Timoteo", "1Ti", "1 Tim." ], 
-   "55": [ "2 Timoteo", "2Ti", "2 Tim." ], 
-   "56": [ "Tito", "Tit" ], 
-   "57": [ "Filemón", "Flm" ],
-   "58": [ "Hebreos", "Heb", "Heb." ], 
-   "59": [ "Santiago", "Snt", "Sant." ], 
-   "60": [ "1 Pedro", "1Pe", "1 Ped." ],
-   "61": [ "2 Pedro", "2Pe", "2 Ped." ], 
-   "62": [ "1 Juan", "1Jn" ], 
-   "63": [ "2 Juan", "2Jn" ],
-   "64": [ "3 Juan", "3Jn" ],
-   "65": [ "Judas", "Jud", "Jud." ],
-   "66": [ "Apocalipsis", "Revelación", "Rev", "Ap", "Apoc." ]
+  "bookNames": {
+    "1": ["Ge", "Gen.", "Genesis"],
+    "2": ["Ex", "Ex.", "Exodus"],
+    "3": ["Le", "Lev.", "Leviticus"],
+    "4": ["Nu", "Num.", "Numbers"],
+    "5": ["De", "Deut.", "Deuteronomy"],
+    "6": ["Jos", "Josh.", "Joshua"],
+    "7": ["Jg", "Judg.", "Judges"],
+    "8": ["Ru", "Ruth", "Ruth"],
+    "9": ["1Sa", "1 Sam.", "1 Samuel"],
+    "10": ["2Sa", "2 Sam.", "2 Samuel"],
+    "11": ["1Ki", "1 Ki.", "1 Kings"],
+    "12": ["2Ki", "2 Ki.", "2 Kings"],
+    "13": ["1Ch", "1 Chron.", "1 Chronicles"],
+    "14": ["2Ch", "2 Chron.", "2 Chronicles"],
+    "15": ["Ezr", "Ezra", "Ezra"],
+    "16": ["Ne", "Neh.", "Nehemiah"],
+    "17": ["Es", "Esther", "Esther"],
+    "18": ["Job", "Job", "Job"],
+    "19": ["Ps", "Ps.", "Psalm", "Psalms"],
+    "20": ["Pr", "Prov.", "Proverbs"],
+    "21": ["Ec", "Eccl.", "Ecclesiastes"],
+    "22": ["Ca", "Song of Sol.", "Song of Solomon"],
+    "23": ["Isa", "Isa.", "Isaiah"],
+    "24": ["Jer", "Jer.", "Jeremiah"],
+    "25": ["La", "Lam.", "Lamentations"],
+    "26": ["Eze", "Ezek.", "Ezekiel"],
+    "27": ["Da", "Dan.", "Daniel"],
+    "28": ["Ho", "Hos.", "Hosea"],
+    "29": ["Joe", "Joel", "Joel"],
+    "30": ["Am", "Amos", "Amos"],
+    "31": ["Ob", "Obad.", "Obadiah"],
+    "32": ["Jon", "Jonah", "Jonah"],
+    "33": ["Mic", "Mic.", "Micah"],
+    "34": ["Na", "Nah.", "Nahum"],
+    "35": ["Hab", "Hab.", "Habakkuk"],
+    "36": ["Zep", "Zeph.", "Zephaniah"],
+    "37": ["Hag", "Hag.", "Haggai"],
+    "38": ["Zec", "Zech.", "Zechariah"],
+    "39": ["Mal", "Mal.", "Malachi"],
+    "40": ["Mt", "Matt.", "Matthew"],
+    "41": ["Mr", "Mark", "Mark"],
+    "42": ["Lu", "Luke", "Luke"],
+    "43": ["Joh", "JHN", "John"],
+    "44": ["Ac", "Acts", "Acts"],
+    "45": ["Ro", "Rom.", "Romans"],
+    "46": ["1Co", "1 Cor.", "1 Corinthians"],
+    "47": ["2Co", "2 Cor.", "2 Corinthians"],
+    "48": ["Ga", "Gal.", "Galatians"],
+    "49": ["Eph", "Eph.", "Ephesians"],
+    "50": ["Php", "Phil.", "Philippians"],
+    "51": ["Col", "Col.", "Colossians"],
+    "52": ["1Th", "1 Thess.", "1 Thessalonians"],
+    "53": ["2Th", "2 Thess.", "2 Thessalonians"],
+    "54": ["1Ti", "1 Tim.", "1 Timothy"],
+    "55": ["2Ti", "2 Tim.", "2 Timothy"],
+    "56": ["Tit", "Titus", "Titus"],
+    "57": ["Phm", "Philem.", "Philemon"],
+    "58": ["Heb", "Heb.", "Hebrews"],
+    "59": ["Jas", "Jas.", "James"],
+    "60": ["1Pe", "1 Pet.", "1 Peter"],
+    "61": ["2Pe", "2 Pet.", "2 Peter"],
+    "62": ["1Jo", "1 John", "1 John"],
+    "63": ["2Jo", "2 John", "2 John"],
+    "64": ["3Jo", "3 John", "3 John"],
+    "65": ["Jude", "Jude", "Jude"],
+    "66": ["Re", "Rev.", "Revelation"]
   },
   "bibleVersions": {
-    "default": "es_jw_nwtsty_wol",
-    "es_jw_nwt": {
-      "displayName": "Traducción del Nuevo Mundo",
-      "urlFormat": "https://www.jw.org/finder?wtlocale=S&pub=nwt&bible=<<bookNum>><<chapterStart>><<verseStart>>-<<bookNum>><<chapterEnd>><<verseEnd>>",
+    "default": "real_bible",
+    "real_bible": {
+      "displayName": "Real Bible",
+      "test": "https://www.bible.com/bible/114/JHN.1.1-2",
+      "urlFormat": "https://www.bible.com/bible/114/<<bookNum>>.<<chapterStart>>.<<verseStart>>-<<verseEnd>>",
       "padStart": {
         "bookNum": {
-          "targetLength": 0,
-          "padString": "0"
-        },
-        "chapter": {
-          "targetLength": 3,
-          "padString": "0"
-        },
-        "verse": {
-          "targetLength": 3,
-          "padString": "0"
-        }
-      }
-    },
-    "es_jw_nwt_wol": {
-      "displayName": "Traducción del Nuevo Mundo (WOL)",
-      "urlFormat": "https://wol.jw.org/es/wol/b/r4/lp-s/nwt/<<bookNum>>/<<chapterStart>>#s=<<verseStart>>&study=discover&v=<<bookNum>>:<<chapterStart>>:<<verseStart>>-<<bookNum>>:<<chapterEnd>>:<<verseEnd>>",
-      "padStart": {
-        "bookNum": {
-          "targetLength": 0,
-          "padString": "0"
-        },
-        "chapter": {
-          "targetLength": 0,
-          "padString": "0"
-        },
-        "verse": {
-          "targetLength": 0,
-          "padString": "0"
-        }
-      }
-    },
-    "es_jw_nwtsty": {
-      "displayName": "Traducción del Nuevo Mundo (Edición de Estudio)",
-      "urlFormat": "https://www.jw.org/finder?wtlocale=S&pub=nwtsty&bible=<<bookNum>><<chapterStart>><<verseStart>>-<<bookNum>><<chapterEnd>><<verseEnd>>",
-      "padStart": {
-        "bookNum": {
-          "targetLength": 0,
-          "padString": "0"
-        },
-        "chapter": {
-          "targetLength": 3,
-          "padString": "0"
-        },
-        "verse": {
-          "targetLength": 3,
-          "padString": "0"
-        }
-      }
-    },
-    "es_jw_nwtsty_wol": {
-      "displayName": "Traducción del Nuevo Mundo (Edición de Estudio) (WOL)",
-      "urlFormat": "https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/<<bookNum>>/<<chapterStart>>#s=<<verseStart>>&study=discover&v=<<bookNum>>:<<chapterStart>>:<<verseStart>>-<<bookNum>>:<<chapterEnd>>:<<verseEnd>>",
-      "padStart": {
-        "bookNum": {
-          "targetLength": 0,
-          "padString": "0"
-        },
-        "chapter": {
-          "targetLength": 0,
-          "padString": "0"
-        },
-        "verse": {
-          "targetLength": 0,
-          "padString": "0"
-        }
-      }
-    },
-    "es_jw_nwtrbi8": {
-      "displayName": "Traducción del Nuevo Mundo (Biblia con Referencias, 1984)",
-      "urlFormat": "https://www.jw.org/finder?wtlocale=S&pub=Rbi8&bible=<<bookNum>><<chapterStart>><<verseStart>>-<<bookNum>><<chapterEnd>><<verseEnd>>",
-      "padStart": {
-        "bookNum": {
-          "targetLength": 0,
-          "padString": "0"
-        },
-        "chapter": {
-          "targetLength": 3,
-          "padString": "0"
-        },
-        "verse": {
-          "targetLength": 3,
-          "padString": "0"
-        }
-      }
-    },
-    "es_jw_nwtrbi8_wol": {
-      "displayName": "Traducción del Nuevo Mundo (Biblia con Referencias, 1984) (WOL)",
-      "urlFormat": "https://wol.jw.org/es/wol/b/r4/lp-s/Rbi8/<<bookNum>>/<<chapterStart>>#s=<<verseStart>>&study=discover&v=<<bookNum>>:<<chapterStart>>:<<verseStart>>-<<bookNum>>:<<chapterEnd>>:<<verseEnd>>",
-      "padStart": {
-        "bookNum": {
-          "targetLength": 0,
-          "padString": "0"
+          "targetLength": 1,
+          "padString": "1"
         },
         "chapter": {
           "targetLength": 0,
@@ -248,7 +162,7 @@
         }
       }
     }
- },
+  },
   "regEx": {
     "search": {
       "multiChapters": "[0-9]+:[0-9 \u00a0,;:-]*[0-9]",
