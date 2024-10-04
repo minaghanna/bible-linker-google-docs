@@ -116,7 +116,7 @@
     "40": ["Mt", "Matt.", "Matthew"],
     "41": ["Mr", "Mark", "Mark"],
     "42": ["Lu", "Luke", "Luke"],
-    "43": ["Joh", "John", "John"],
+    "43": ["Joh", "JHN", "John"],
     "44": ["Ac", "Acts", "Acts"],
     "45": ["Ro", "Rom.", "Romans"],
     "46": ["1Co", "1 Cor.", "1 Corinthians"],
@@ -148,7 +148,7 @@
       "urlFormat": "https://www.jw.org/finder?wtlocale=E&pub=bi10&bible=<<bookNum>><<chapterStart>><<verseStart>>-<<bookNum>><<chapterEnd>><<verseEnd>>",
       "padStart": {
         "bookNum": {
-          "targetLength": 0,
+          "targetLength": 1,
           "padString": "0"
         },
         "chapter": {
