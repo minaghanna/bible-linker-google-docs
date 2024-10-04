@@ -139,13 +139,20 @@
     "63": ["2Jo", "2jn", "2 John"],
     "64": ["3Jo", "3jn", "3 John"],
     "65": ["Jude", "jud", "Jude"],
-    "66": ["Re", "rev", "Revelation"]
+    "66": ["Re", "rev", "Revelation"],
+    "67": ["To", "tob", "Tobit"],
+    "68": ["Ju", "jdt", "Judith"],
+    "69": ["Wi", "wis", "Wisdom"],
+    "70": ["Si", "sir", "Sirach"],
+    "71": ["Ba", "bar", "Baruch"],
+    "72": ["1Ma", "1ma", "1 Maccabees"],
+    "73": ["2Ma", "2ma", "2 Maccabees"]
   },
   "bibleVersions": {
     "default": "real_bible",
     "real_bible": {
       "displayName": "Real Bible",
-      "urlFormat": "https://www.bible.com/bible/114/<<bookNameAbbr2>>.<<chapterStart>>.<<verseStart>>-<<verseEnd>>",
+      "urlFormat": "https://www.bible.com/bible/42/<<bookNameAbbr2>>.<<chapterStart>>.<<verseStart>>-<<verseEnd>>",
       "padStart": {
         "bookNum": {
           "targetLength": 0,
