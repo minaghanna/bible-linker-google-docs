@@ -143,31 +143,13 @@
   },
   "bibleVersions": {
     "default": "real_bible",
-    "en_jw_kjv": {
-      "displayName": "King James Version (1611)",
-      "urlFormat": "https://www.jw.org/finder?wtlocale=E&pub=bi10&bible=<<bookNum>><<chapterStart>><<verseStart>>-<<bookNum>><<chapterEnd>><<verseEnd>>",
-      "padStart": {
-        "bookNum": {
-          "targetLength": 1,
-          "padString": "1"
-        },
-        "chapter": {
-          "targetLength": 3,
-          "padString": "0"
-        },
-        "verse": {
-          "targetLength": 3,
-          "padString": "0"
-        }
-      }
-    },
     "real_bible": {
       "displayName": "Real Bible",
       "test": "https://www.bible.com/bible/114/JHN.1.1-2",
       "urlFormat": "https://www.bible.com/bible/114/<<bookNum>>.<<chapterStart>>.<<verseStart>>-<<verseEnd>>",
       "padStart": {
         "bookNum": {
-          "targetLength": 0,
+          "targetLength": 1,
           "padString": "0"
         },
         "chapter": {
