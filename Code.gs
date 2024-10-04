@@ -498,6 +498,11 @@ function bibleLinker(bibleDataSource, bibleVersion) {
       } else {
 
         searchElement = doc.getBody();
+        // append all elements inside of doc.getFootnotes() to searchElement
+        let footnotes = doc.getFootnotes();
+        for (let i=0; i < footnotes.length; i++) {
+          searchElement.append(footnotes[i].getText());
+        };
         searchResult = searchElement.findText(searchRegex);
         
         // Send found matches to parser
